@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AAGAMAN MART</title>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        sessionStorage.setItem('aagaman_spa_redirect', path + search + hash);
+        var parts = path.split('/').filter(Boolean);
+        // Preserve GitHub Pages project repo base segment if present (e.g. /repo-name/)
+        var base = parts.length > 0 && !/^(shop|category|product|checkout|account|support|faq|policy|admin)$/.test(parts[0])
+          ? '/' + parts[0] + '/'
+          : '/';
+        window.location.replace(base);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

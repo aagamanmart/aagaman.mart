@@ -1,0 +1,6 @@
+{
+  "name": "AAGAMAN MART",
+  "description": "AAGAMAN MART — Quality That Moves You Forward. Complete Indian online shopping marketplace for groceries, electronics, fashion, home & kitchen, beauty, and appliances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

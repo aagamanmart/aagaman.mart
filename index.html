@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%BASE_URL%favicon.ico" />
+    <script>
+      (function () {
+        try {
+          var redirect = sessionStorage.getItem('aagaman_spa_redirect');
+          if (redirect) {
+            sessionStorage.removeItem('aagaman_spa_redirect');
+            window.history.replaceState(null, '', redirect);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>AAGAMAN MART – Quality That Moves You Forward | Online Shopping India</title>
+    <meta name="description" content="Shop groceries, electronics, fashion, home & kitchen, beauty, and appliances on AAGAMAN MART. Fast Indian delivery, Razorpay & UPI payments, and verified quality." />
+    <meta property="og:title" content="AAGAMAN MART – Quality That Moves You Forward" />
+    <meta property="og:description" content="Shop groceries, electronics, fashion, home & kitchen, beauty, and appliances on AAGAMAN MART with fast delivery across India." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AAGAMAN MART" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AAGAMAN MART – Quality That Moves You Forward" />
+    <meta name="twitter:description" content="Shop groceries, electronics, fashion, home & kitchen, beauty, and appliances on AAGAMAN MART." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "AAGAMAN MART",
+        "description": "Quality That Moves You Forward. Complete Indian online marketplace for groceries, electronics, fashion, home & kitchen, beauty, and appliances.",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "UPI, Credit Card, Debit Card, Net Banking, Cash on Delivery"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
